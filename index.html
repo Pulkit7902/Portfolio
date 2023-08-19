@@ -1,0 +1,741 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+
+:root {
+  --clr-background: rgb(247, 244, 244);
+  --clr-gray: rgb(119, 114, 114);
+  --font-main: "Caudex", serif;
+  --clr-dark-gray: #262626;
+  --clr-dark-black: #121212;
+  --clr-dark-text: rgb(226, 225, 225);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: var(--clr-background);
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* -------------------------Header/Navbar */
+header {
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.navbar__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar__ul .name {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.navbar__ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__ul li {
+  background: rgba(235, 230, 230, 0.3);
+  width: 50%;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.link,
+.portfolio__header,
+footer h2 {
+  text-transform: uppercase;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.header__container img {
+  width: 70%;
+}
+
+.header__text {
+  font-weight: 200;
+  width: 100%;
+  margin-top: 20px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+/* End of Header/Navbar--------------------- */
+
+/* Portfolio section ----------------------- */
+.portfolio,
+.portfolio__container {
+  display: flex;
+}
+.portfolio {
+  background-color: rgb(238, 237, 237);
+  margin-top: 2.5rem;
+  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio__header {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  width: 95%;
+}
+
+.card {
+  margin: 1.5rem 0;
+  max-width: 360px;
+  /*   box-shadow: 5px 5px 5px #fbbebe; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.card p {
+  font-weight: 200;
+}
+
+.text-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* End of services------------------------ */
+
+/* Skills --------------------------------- */
+.skills {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.skills h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.skills-container {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills__item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.skills__item img:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+.skills img {
+  max-width: 80px;
+  margin-bottom: -5px;
+}
+
+/* Footer --------------------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: var(--clr-background);
+}
+
+.footer__nav {
+  width: 100%;
+  display: flex;
+  min-height: 30px;
+  padding: 10px;
+  bottom: 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
+footer h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  font-weight: 200;
+  color: var(--clr-gray);
+}
+
+.footer__text-container1 p {
+  color: var(--clr-gray);
+}
+
+.footer__nav-links {
+  display: none;
+}
+
+.footer__text-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footer__text-container1 {
+  padding-bottom: 3rem;
+}
+
+.footer__nav-links li {
+  padding: 5px 10px 10px 10px;
+  text-decoration: none;
+}
+
+.footer__nav-links li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.footer__nav-hr {
+  width: 100%;
+  margin: 0 auto;
+  border-color: rgb(255, 255, 255);
+}
+
+footer p {
+  max-width: 400px;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.to-top {
+  list-style-type: none;
+  margin-right: 10px;
+  justify-self: flex-end;
+}
+
+.to-top a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    min-width: 600px;
+  }
+
+  header {
+    padding-bottom: 4rem;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__ul li {
+    padding: 5px 15px 15px 10px;
+    background-color: transparent;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__container img {
+    max-width: 300px;
+  }
+
+  .header__container p {
+    max-width: 810px;
+    text-align: left;
+  }
+
+  /* Portfolio section at 768----------- */
+  .portfolio__container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1165px;
+  }
+
+  .card {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Skills at 768 ------------------- */
+
+  .skills {
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .skills h2 {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .skills__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Footer at 768px ---------------- */
+  footer {
+    display: flex;
+    align-items: center;
+  }
+
+  footer p {
+    max-width: 400px;
+    padding-bottom: 2rem;
+  }
+
+  .phone,
+  .email {
+    margin-right: 8px;
+  }
+
+  .footer__nav {
+    width: 95%;
+  }
+
+  .footer__nav h2 {
+    text-transform: none;
+  }
+
+  .footer__nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: auto;
+  }
+
+  .footer__nav-links li {
+    padding: 5px 10px 10px 10px;
+    text-decoration: none;
+  }
+
+  .footer__nav-hr {
+    width: 95%;
+    border-color: rgb(255, 255, 255);
+  }
+  .to-top {
+    
+  }
+}
+
+/* min width 1024 ---------------------------------- */
+@media screen and (min-width: 1024px) {
+  .navbar,
+  .navbar__ul,
+  .header__container {
+    display: flex;
+    position: relative;
+    left: -15px;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar__ul {
+    flex-direction: row;
+  }
+
+  .navbar__ul li {
+    background-color: transparent;
+  }
+
+  .navbar__ul .link {
+    margin: 0;
+  }
+
+  .header__container {
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__container img {
+    max-width: 330px;
+  }
+
+  .header__text {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  /* Portfolio section------------------------- */
+  .portfolio__container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-weight: 200;
+  }
+  /* End Portfolo------------------------------ */
+}
+
+/* Dark mode------------------------------- */
+button[class="darkmode"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 50%;
+}
+
+.darkmode .portfolio {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode footer {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .wrapper {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .navbar__ul li {
+  color: var(--clr-dark-text);
+  background-color: transparent;
+}
+
+.darkmode a[href] {
+  color: var(--clr-dark-text);
+}
+.img{
+    position: relative;
+    border-radius: 107px;
+    right: -137px;
+    top: 0px;
+}
+.mail{
+  position: relative;
+  top: -27px;
+}
+.icon{
+  display: flex;
+  position: relative;
+  padding: 0rem;
+  top: 0rem;
+  height: 0rem;
+  gap: 2rem;
+  left: 8rem;
+}
+.ic1{
+  height: 0rem;
+}
+</style>
+<div class='wrapper'>
+  <div class="container">
+    <header id="home">
+      <nav class="navbar">
+        <h2 class='name'>Pulkit Chopra</h2>
+        <ul class="navbar__ul">
+          <li class='link'><a href="#home">Home</a></li>
+          <li class='link'><a href="#portfolio">Projects</a></li>
+          <li class='link'><a href="#skills">Skills</a></li>
+          <li class='link'><a href="https://drive.google.com/file/d/1kcfaN1prIblMQoNI3QRE-QhYtuUzzoKB/view?usp=sharing">Resume</a></li>
+          <li class='link'><a href="#services">Services</a></li>
+          <li class='link'><a href="#contact">Contact</a></li>
+          <li>
+            <!-- Dark Theme Toggle  -->
+            <button class='darkmode'><i class="fas fa-moon"></i></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__container">
+        <img class="img" src="https://media.licdn.com/dms/image/D4D03AQGVSq4v3zvBew/profile-displayphoto-shrink_800_800/0/1683001275238?e=1697673600&v=beta&t=AmNuYN2Gf7tW4ZgUBZfvbgPDYQ0PtTFVXoJy860wuPQ" alt="profile-image">
+        <div class="header__text__container">
+          <p class="header__text">
+
+"Hello there, I'm Pulkit Chopra, and I'm passionate about crafting robust and dynamic web applications. With a strong foundation in both front-end and back-end technologies, I consider myself a full stack developer. I thrive on transforming ideas into reality by seamlessly bridging the gap between user experience and technical functionality.
+On the front-end, I excel in creating intuitive and visually appealing interfaces using HTML, CSS, and JavaScript. I take pride in ensuring that users have a smooth and engaging experience while interacting with the applications I build. Whether it's responsive design or optimizing for various devices, I'm dedicated to delivering a seamless user interface.
+In a rapidly evolving tech landscape, I find joy in adapting to new challenges and problem-solving. I look forward to opportunities where I can leverage my full stack skills to create innovative and user-centric applications that push the boundaries of what's possible. If you're looking for a dedicated full stack developer who is enthusiastic about turning concepts into functional reality, I'm here and ready to take on exciting projects!"</p>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main class="portfolio" id='portfolio'>
+    <h2 class='portfolio__header'>Projects</h2>
+    <div class="portfolio__container">
+      <article class='card'>
+        <img src='https://cdn-icons-png.flaticon.com/128/1162/1162456.png' alt="page">
+        <div class="text-container">
+          <h2>E-Commerce Website</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class='card'>
+        <img src='https://cdn-icons-png.flaticon.com/512/993/993725.png' alt="page">
+        <div class="text-container">
+          <h2>Data Collection App</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class='card'>
+        <img src='https://t3.ftcdn.net/jpg/04/66/51/94/240_F_466519481_IcCp726EjgAkiKpOXnt1esOPwxoCSTB7.jpg' alt="app">
+        <div class="text-container">
+          <h2>Hate Speech Detection</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class='card'>
+        <img src='https://cdn-icons-png.flaticon.com/512/4257/4257674.png' alt="app">
+        <div class="text-container">
+          <h2>Favorite Spots</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class='card'>
+        <img src='https://cdn-icons-png.flaticon.com/512/5956/5956494.png' alt="gallery">
+        <div class="text-container">
+          <h2>Project Gallery</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class='card'>
+        <img src='https://cdn-icons-png.flaticon.com/512/891/891175.png' alt="Calculator">
+        <div class="text-container">
+          <h2>Calculator</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+    </div>
+
+    <section class='skills' id='skills'>
+      <h2>Skills</h2>
+      <article class="skills-container">
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JS">
+          <p>Javascript</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML5">
+          <p>HTML5</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
+          <p>CSS3</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/128/11485/11485817.png" alt="figma">
+          <p>Machine Learning</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://t3.ftcdn.net/jpg/05/83/61/64/240_F_583616420_cyNZmksm5h2x5vgcKGmRjnivfmrgnSTb.jpg" alt="Github">
+          <p>Node Js</p>
+        </div>
+         <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968544.png" alt="Github">
+          <p>Python</p>
+        </div>
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="Github">
+          <p>C++</p>
+        </div>
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="https://cdn-icons-png.flaticon.com/128/1449/1449158.png" alt="Github">
+          <p>Data Science</p>
+        </div>
+        
+      </article>
+    </section>
+    <main class="portfolio" id='services'>
+      <h2 class='portfolio__header'>Services</h2>
+      <div class="portfolio__container">
+        <article class='card'>
+          <img src='https://cdn-icons-png.flaticon.com/128/1162/1162456.png' alt="page">
+          <div class="text-container">
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </article>
+  
+        <article class='card'>
+          <img src='https://cdn-icons-png.flaticon.com/512/993/993725.png' alt="page">
+          <div class="text-container">
+            <h2>Logo Designing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </article>
+  
+        <article class='card'>
+          <img src='https://t3.ftcdn.net/jpg/04/66/51/94/240_F_466519481_IcCp726EjgAkiKpOXnt1esOPwxoCSTB7.jpg' alt="app">
+          <div class="text-container">
+            <h2>Data Analyst</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </article>
+      </div>
+  
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer__text-container" id='contact'>
+          <h2>Contact</h2>
+          <p>Lets connect if you want to collaborate...</p>
+        </div>
+        <div class="footer__text-container1">
+           
+          <p><span class='phone'>Phone</span> <strong>7290920247</strong></p>
+          <div class="mail">
+          Email: <a href="mailto:'pulkitchopra690@gmail.com'"><strong>pulkitchopra690@gmail.com</strong></a>
+          </div>
+          
+          <div class="icon">
+          <a class="ic1" href="https://www.linkedin.com/in/pulkit-chopra-2aa14a169/" class="loading" target="on_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/pulkit7399/" class="loading" target="on_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Pulkit7902" class="loading" target="on_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+        ++++++++++++++++++++++++++++++++++++++++++++++
+      </div>
+      <hr class='footer__nav-hr'>
+      <nav class="footer__nav">
+        <h2>P.C</h2>
+        
+        <p class='to-top'><a href="#top"><strong>BACK TO TOP</strong></a></p>
+      </nav>
+    </footer>
+  </main>
+  <script>
+    let btn = document.querySelector(".darkmode");
+
+btn.addEventListener("click", () => {
+  if (btn.innerHTML === `<i class="fas fa-moon"></i>`) {
+    btn.innerHTML = `<i class="fas fa-sun"></i>`;
+    btn.style.color = "orange";
+    btn.style.backgroundColor = "rgb(43, 43, 43)";
+    document.body.classList.add("darkmode");
+  } else {
+    btn.innerHTML = `<i class="fas fa-moon"></i>`;
+    btn.style.color = "black";
+    btn.style.backgroundColor = "white";
+    document.body.classList.remove("darkmode");
+  }
+});
+
+  </script>
+</div>
